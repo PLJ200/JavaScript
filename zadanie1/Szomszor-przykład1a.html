@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Przykład nr 1 </title>
+<script language="JavaScript" type="text/javascript">
+function show_alert()
+{ 
+alert("Uwaga!"); 
+}
+function WinOpen_szomszor()
+{
+window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+"toolbar=no →wytłumaczenie"
+"directories=no, →wytłumaczenie"
+"menubar=no, →wytłumaczenie"
+"height=280, →wytłumaczenie"
+"width=160, →wytłumaczenie"
+"top=200, →wytłumaczenie"
+"left=200 →wytłumaczenie"
+}
+function okno_zamknij_szomszor()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<form>
+<input type="button" onclick="show_alert()" value="Pokaż Alert Box" />
+<input type="button" value="Obraz" onclick="WinOpen_szomszor()"/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_szomszor()"/>
+</form>
+</body>
+</html>
