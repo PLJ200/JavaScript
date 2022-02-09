@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Przykład nr tutaj wpisz odpowiedni numer oraz nazwisko </title>
+<script language="JavaScript">
+function OKE_Open()
+{
+setTimeout("OKE_Open();", 4000);
+window.location.replace ("http://oke.gda.pl");
+}
+function Gdańsk_Open()
+{
+    setTimeout("Gdańsk_Open();", 6000);
+    window.location.replace ("https://www.gdansk.pl");
+}
+function Wybrana_Strona_Open()
+{
+    setTimeout("Wybrana_Strona_Open();", 10000);
+    window.location.replace ("https://www.youtube.com");
+}
+function Refresh()
+{
+    setTimeout(8000);
+    window.location.reload(true);
+}
+</script>
+</head>
+<body>
+<form>
+<input type="button" name="przycisk1" value="Szomszor-Strona OKE" onclick="OKE_Open(' ')">
+<input type="button" name="przycisk2" value="Szomszor-Gdańsk" onclick="Gdańsk_Open(' ')">
+<input type="button" name="przycisk3" value="Szomszor-Wybrana Strona" onclick="Wybrana_Strona_Open(' ')">
+<input type="button" name="przycisk4" value="Szomszor-Odświeżenie" onclick="Refresh(' ')">
+</form>
+</body>
+</html>
